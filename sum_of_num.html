@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Sum of number</h3>
+    <input type="number" id="userInput" placeholder="Enter a number" />
+    <button onclick="calculateResult()">Calculate Sum</button>
+    <p id="result"></p>
+
+    <script>
+      function calculateResult() {
+        const input = document.getElementById("userInput").value;
+        const number = parseInt(input);
+
+        if (isNaN(number) || number < 1) {
+          document.getElementById("result").innerText =
+            "please enter a valid number greater then 1";
+          return;
+        }
+
+        let sum = 0;
+        for (let i = 1; i <= number; i++) {
+          sum += i;
+        }
+        document.getElementById(
+          "result"
+        ).innerText = `The sum of numbers from 1 to ${number} is ${sum}`;
+      }
+    </script>
+  </body>
+</html>
