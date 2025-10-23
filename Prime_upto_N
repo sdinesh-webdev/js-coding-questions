@@ -1,0 +1,15 @@
+function isPrime(num){
+    if(num <= 2) return false;
+    for(i=2; i<=Math.sqrt(num); i++){
+        if(num % i === 0) return false;
+    }
+    return true
+}
+ let num = parseInt(prompt('enter the number LIMIT : '));
+ console.log(`prime number limit upto ${num}`)
+ 
+ for(let i=2; i<=num; i++){
+     if(isPrime(i)){
+         console.log(i);
+     }
+ }
