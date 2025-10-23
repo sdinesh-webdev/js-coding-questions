@@ -1,0 +1,6 @@
+function isEven(num) {
+    if(num % 2 === 0) return true;
+}
+
+let num = parseInt(prompt('enter the number:'))
+console.log(`${num} is ${isEven(num) ? 'even': 'odd'}`)
