@@ -1,5 +1,7 @@
 function palindrome(string){
-    const reverse = string.split('').reverse().join('');
-    return reverse === string;
+    let cleaned = string.split('').reverse().join('');
+    return cleaned === string;
 }
-console.log(palindrome('madam'));
+
+let string = prompt('enter the string for check palindrome: ')
+console.log(`entered num ${string} is ${palindrome(string) ? 'palindrome': 'not_palindrome'}`)
