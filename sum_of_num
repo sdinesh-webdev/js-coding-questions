@@ -1,1 +1,10 @@
 
+function sumofnum(num){
+    let sum = num.split('')
+                  .map(Number)
+                  .reduce((a,b) => a+b, 0);
+    return sum;
+}
+
+let num = prompt('enter the num like 1234 : ');
+console.log(`${sumofnum(num)}`)
