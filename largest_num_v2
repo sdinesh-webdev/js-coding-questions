@@ -1,1 +1,6 @@
+let input = prompt('enter the number:')
+let num = input.split('').map(Number)
 
+let max = Math.max(...num);
+
+console.log(max)
