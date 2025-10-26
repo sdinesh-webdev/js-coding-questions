@@ -1,1 +1,8 @@
 
+function reverse(num){
+    let string = num.split('').reverse().join('');
+    return string;
+}
+
+let num = prompt('enter the value to get reversed= ')
+console.log(reverse(num))
